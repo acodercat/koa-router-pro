@@ -9,7 +9,7 @@
 ```js
 var routerPro = require('koa-router-pro');
 var router = routerPro({//这里会返回koa-router的实例
-  root:'C:\Users\Cat\Desktop\nodejs\app\controllers\',//controller的根目录
+  root:'C:\\Users\\Cat\\Desktop\\nodejs\\app\\controllers',//controller的根目录
   routes:[{routes:{'get /' : 'IndexController.test','post /' : '/user/InfoController.test'},prefix:'/v1'}],//一个数组每个数组元素是一个包含routes和prefix的对象prefix为可选项
   prefix:'/v1',//路由前缀，可选项
   autoLoad:false//自动路由的配置，会根据配置的root目录来自动注册目录及其子目录下的所有控制器文件，默认是true。如果设置为false就会关闭。
@@ -50,7 +50,7 @@ $ npm install koa-router-pro --save
 
 
 
-routes.js
+routes.js 路由支持正则如：get /blog/(\\d{4}-\\d{2}-\\d{2})
 
 ```js
 module.exports.prefix = '/user';//路由文件中的路由前缀，可选项
@@ -59,7 +59,6 @@ module.exports.routes = {
     yield *next;
   },
   'post /':'/user/InfoController.test',
-  'get /blog/(\\d{4}-\\d{2}-\\d{2})' : '/user/InfoController.test',//支持正则
   '/':'IndexController.test',//如果不写请求方式，即为all
   '/test':{
     name:'test',//给路由取名，通过router.url('test')，来得到路由url
@@ -68,7 +67,6 @@ module.exports.routes = {
   }
 }
 ```
-
 root目录下的IndexController.js 默认会自动把root目录下的以Controller结尾的js文件注册到路由中去，url为路径加控制器命加方法名,routes里面的路由如果跟自动路由重复，routes配置项中的路由如果跟自动路由重复，routes配置项中的路由会覆盖自动路由
 ```js
 
@@ -80,14 +78,12 @@ module.exports = {
 };
 
 ```
-
-
 app.js
 ```js
 var routes = rquire('routes.js');
 var routerPro = require('koa-router-pro');
 var router = routerPro({
-  root:'C:\Users\Cat\Desktop\nodejs\app\controllers\',//controller的根目录
+  root:'C:\\Users\\Cat\\Desktop\\nodejs\\app\\controllers',//controller的根目录
   routes:[routes],//一个数组每个数组元素是一个包含routes和prefix的对象prefix为可选项
   prefix:'/v1'//路由前缀，可选项
 });
