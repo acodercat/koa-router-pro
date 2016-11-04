@@ -1,0 +1,82 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "koa-router-pro",
+        "scope": null,
+        "escapedName": "koa-router-pro",
+        "name": "koa-router-pro",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\Cat\\Desktop\\nodejs"
+    ]
+  ],
+  "_from": "koa-router-pro@latest",
+  "_id": "koa-router-pro@1.0.0",
+  "_inCache": true,
+  "_location": "/koa-router-pro",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/koa-router-pro-1.0.0.tgz_1478249731196_0.61979197897017"
+  },
+  "_npmUser": {
+    "name": "codercat",
+    "email": "1067302838@qq.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {
+    "debug": "2.2.0",
+    "http-errors": "1.5.0",
+    "methods": "1.1.2",
+    "path-to-regexp": "1.5.3"
+  },
+  "_requested": {
+    "raw": "koa-router-pro",
+    "scope": null,
+    "escapedName": "koa-router-pro",
+    "name": "koa-router-pro",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/koa-router-pro/-/koa-router-pro-1.0.0.tgz",
+  "_shasum": "83934968ef165946f48ad86e7365b999e9052e45",
+  "_shrinkwrap": null,
+  "_spec": "koa-router-pro",
+  "_where": "C:\\Users\\Cat\\Desktop\\nodejs",
+  "author": {
+    "name": "CoderCat"
+  },
+  "dependencies": {
+    "koa-router": "^5.4.0"
+  },
+  "description": "基于koa-router中间件基础之上的一个扩展版本，把路由文件跟控制器独立开来，写法类似于Sails的routes.js文件。并且实现了根据目录路径自动注册路由。",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "83934968ef165946f48ad86e7365b999e9052e45",
+    "tarball": "https://registry.npmjs.org/koa-router-pro/-/koa-router-pro-1.0.0.tgz"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "codercat",
+      "email": "1067302838@qq.com"
+    }
+  ],
+  "name": "koa-router-pro",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
